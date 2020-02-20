@@ -30,3 +30,4 @@ override.tf.json
 
 .project
 terraform.tfvars
+env.src
