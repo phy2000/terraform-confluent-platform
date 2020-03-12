@@ -92,7 +92,7 @@ variable "app_servers" {
 }
 variable "app_instance_type" {
     type = string
-    default = "t3.small"
+    default = "t3.medium"
 }
 variable "app_root_volume_size" {
     type = number

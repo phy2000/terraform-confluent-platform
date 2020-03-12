@@ -15,6 +15,10 @@ variable "key_pair" {
     type = string
     description = "Your KeyPair Name that you have already added to AWS"  
 }
+variable "image_id" {
+    type = string
+    description = "Image Id"
+}
 
 
 module "paul_cp" {
@@ -28,4 +32,5 @@ module "paul_cp" {
   first_name = var.first_name
   cluster_id = var.cluster_id
   key_pair = var.key_pair
+  image_id = var.image_id
 }
