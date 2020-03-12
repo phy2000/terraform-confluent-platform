@@ -1,0 +1,6 @@
+first_name = "paul"
+key_pair = "west2-pyoung"
+cluster_id = "bh"
+#image_id = "ami-029c0fbe456d58bd1"
+#image_id = "ami-0e9f82cc2469d3d1d"
+image_id = "ami-078a6a18fb73909b2"
