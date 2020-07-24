@@ -16,18 +16,16 @@ variable "key_pair" {
     description = "Your KeyPair Name that you have already added to AWS"  
 }
 
-
-module "aws_cp" {
+module "cp" {
   source = "../../modules/shared-cp-aws"
-  
-  zookeeper_servers = 3
-  kafka_broker_servers = 3
+
+  zookeeper_servers = 1
+  kafka_broker_servers = 1
   control_center_servers = 1
-  ksql_servers = 0
-  kafka_connect_servers = 0
-  rest_proxy_servers = 0
-  schema_registry_servers = 0
-  
+  ksql_servers = 1
+  kafka_connect_servers = 1
+  rest_proxy_servers = 1
+  schema_registry_servers = 1
   first_name = var.first_name
   cluster_id = var.cluster_id
   key_pair = var.key_pair

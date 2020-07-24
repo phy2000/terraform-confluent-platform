@@ -4,7 +4,6 @@
 # .tfstate files
 *.tfstate
 *.tfstate.*
-
 # Crash log files
 crash.log
 
@@ -31,3 +30,4 @@ override.tf.json
 .project
 terraform.tfvars
 env.src
+modules/terraform-aws-confluent-platform
