@@ -19,6 +19,7 @@ variable "key_pair" {
 
 module "aws_cp" {
   source = "../../modules/shared-cp-aws"
+  image_id = "ami-01ed306a12b7d1c96"
 
   zookeeper_servers = 3
   kafka_broker_servers = 3
